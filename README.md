@@ -1,5 +1,7 @@
 # adspower-browser-skill
 
+> **已迁移**：这个 skill 已经收录到合集 [doubao-work-skills](https://github.com/yang2979326292-hub/doubao-work-skills)，以后只在合集里更新，最新版本请到 [skills/adspower-browser](https://github.com/yang2979326292-hub/doubao-work-skills/tree/main/skills/adspower-browser) 获取。本仓库保留不删，下面的旧安装命令仍然可用，但不会再更新。
+
 一个 AI Agent skill：让 豆包工作Agent 通过本机 AdsPower 客户端的 Local API 管理指纹浏览器，包括打开、关闭、新建、修改、删除、查询环境，以及分组、标签、代理、团队成员、内核下载等。
 
 改写自 AdsPower 官方的 [AdsPower/adspower-browser](https://github.com/AdsPower/adspower-browser)（MIT）。原版通过 npm 包 `adspower-browser` 调用；这个版本改成一个 PowerShell 7 脚本，直接请求 Local API，不需要 Node.js。命令名和参数与原 CLI 一致。
