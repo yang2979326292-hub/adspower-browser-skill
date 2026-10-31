@@ -16,15 +16,30 @@ skills/adspower-browser/
 └── LICENSE.txt
 ```
 
-## 安装
+## 下载与安装
 
-用 skills CLI 安装：
+### 方法一：直接下载 ZIP（最简单，不需要安装任何工具）
+
+1. 直接点这个链接下载：[下载 adspower-browser-skill.zip](https://codeload.github.com/yang2979326292-hub/adspower-browser-skill/zip/refs/heads/main)（也可以在页面右上角点绿色的 **Code → Download ZIP**）。
+2. 解压后进入 `adspower-browser-skill-main` 文件夹。
+3. 把里面的 `skills\adspower-browser` 整个文件夹复制到你 Agent 的 skill 目录下。
+
+**豆包工作（Windows）用户**复制到这里（资源管理器地址栏粘贴即可，没有的文件夹名照建）：
+
+```
+%LOCALAPPDATA%\DoubaoWork\User Data\Default\.doubaowork\agent_mode\workspace\.user_skills\
+```
+
+复制完在豆包工作里开一轮新对话就生效，也会同步到豆包工作的云主机。
+
+### 方法二：用 skills CLI 安装（要同时装给其他 Agent 时）
 
 ```bash
 npx skills add https://github.com/yang2979326292-hub/adspower-browser-skill --skill adspower-browser
 ```
 
-也可以手动安装：把 `skills/adspower-browser` 整个文件夹复制到你的 Agent 的 skill 目录下。
+- 这种方式需要本机装有 Node.js 和 git；没装 git 会报 `spawn git ENOENT`，改用方法一即可。
+- 它会装到 `~/.agents/skills` 等多个 Agent 的目录，但不会自动放进上面的豆包工作用户 skill 目录；只给豆包工作用，推荐方法一。
 
 ## 使用前准备
 
